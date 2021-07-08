@@ -1,0 +1,15 @@
+﻿@model List<Movie>
+
+<div class="container-fluid">
+
+    @foreach (Movie m in Model)
+    {
+        <div class=".row">
+            <p> @m.Title</p>
+            <p> @m.Actors</p>
+            <p> @m.Director</p>
+            <img src="@m.Poster" />
+        </div>
+    }
+
+</div>

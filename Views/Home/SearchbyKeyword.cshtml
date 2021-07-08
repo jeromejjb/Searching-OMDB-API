@@ -1,0 +1,20 @@
+﻿@model SearchResults
+
+<div class="container-fluid">
+
+    <p>Total Results found matching your search</p>
+    <p>@Model.totalResults</p>
+
+
+    @foreach (Search s in Model.Search)
+    {
+    <img src="@s.Poster" />
+
+    @s.Title
+
+
+    @s.Year
+    <br />
+
+    }
+</div>
